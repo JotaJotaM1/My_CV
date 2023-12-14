@@ -1,90 +1,136 @@
 @import url(reset.css);
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-:root{
-    --textNav:rgb(255, 255, 255);
-    --blackGeneral: black;
-    --colorIconMenu: white;
-    --hoverNav:aqua;
+:root {
+  --textNav: rgb(255, 255, 255);
+  --blueDarkGeneral: rgb(2, 2, 51);
+  --colorIconMenu: white;
+  --hoverNav: aqua;
+  --textGeneral: rgb(2, 2, 51);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 0 5%;
 }
 
 header {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:var(--blackGeneral);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blueDarkGeneral);
 }
 
 .logoImg {
-    max-width: 10rem;
+  max-width: 10rem;
 }
 
 .navList {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navList li a {
-    text-decoration: none;
-    color: var(--textNav);
-    font-size: 20px;
+  text-decoration: none;
+  color: var(--textNav);
+  font-size: 20px;
 }
 
 .navList li:hover a {
-    color:var(--hoverNav);
+  color: var(--hoverNav);
 }
 
 .openMenu,
 .closeMenu {
-    display: none;
+  display: none;
 }
 
+.fatherGallery {
+  margin: 0 3%;
+}
+h1 {
+  color: var(--textGeneral);
+  text-align: center;
+  font-size: 25px;
+  padding: 30px;
+  font-weight: 600;
+}
+
+.imgGeneral {
+  width: 230px;
+  height: auto;
+}
+.cardLengu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+article {
+  padding: 30px;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+}
+.textCard {
+  color: var(--textGeneral);
+  font-weight: 300;
+  text-align: center;
+}
+.textJS {
+  padding-top: 20px;
+}
 @media screen and (max-width: 780px) {
+  .openMenu,
+  .closeMenu {
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    color: var(--colorIconMenu);
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .openMenu,
-    .closeMenu {
-        display: block;
-        border: 0;
-        font-size: 1.5rem;
-        color: var(--colorIconMenu);
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--blueDarkGeneral);
+    padding: 2rem;
+    bottom: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
 
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: var(--blackGeneral);
-        padding: 2rem;
-        bottom: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+  }
 
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-        transition: 0.5s; 
-    }
+  .navList {
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+  }
 
-    .navList {
-        flex-direction: column;
-        align-items: end;
-        gap: 2rem;
-    }
+  .cardLengu{
+    display: block;
+  }
 }
