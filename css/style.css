@@ -1,11 +1,17 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif; */
+
 * {
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
+}
+
+:root{
+    --textNav:rgb(255, 255, 255);
+    --blackGeneral: black;
+    --colorIconMenu: white;
+    --hoverNav:aqua;
 }
 
 header {
@@ -13,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color:var(--blackGeneral);
 }
 
 .logoImg {
@@ -29,8 +35,12 @@ header {
 
 .navList li a {
     text-decoration: none;
-    color: white;
+    color: var(--textNav);
     font-size: 20px;
+}
+
+.navList li:hover a {
+    color:var(--hoverNav);
 }
 
 .openMenu,
@@ -45,7 +55,7 @@ header {
         display: block;
         border: 0;
         font-size: 1.5rem;
-        color: white;
+        color: var(--colorIconMenu);
         background-color: transparent;
         cursor: pointer;
     }
@@ -60,11 +70,10 @@ header {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: black;
+        background-color: var(--blackGeneral);
         padding: 2rem;
         bottom: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-        transition: 0.5s; 
     }
 
     .nav.visible {
