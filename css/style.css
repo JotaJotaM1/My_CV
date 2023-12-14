@@ -129,8 +129,10 @@ article {
     align-items: end;
     gap: 2rem;
   }
+}
 
-  .cardLengu{
-    display: block;
-  }
+@media screen and (min-width: 769px) {
+    .cardLengu {
+      flex-direction: row; /* Cambia a row en pantallas mayores a 768px */
+    }
 }
