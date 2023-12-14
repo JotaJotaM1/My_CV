@@ -131,7 +131,7 @@ article {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 903px) {
     .cardLengu {
       flex-direction: row; /* Cambia a row en pantallas mayores a 768px */
     }
