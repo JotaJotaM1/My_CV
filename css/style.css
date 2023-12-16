@@ -20,6 +20,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 0 5%;
+  background-color: ;
 }
 
 header {
@@ -60,12 +61,32 @@ header {
 .fatherGallery {
   margin: 0 3%;
 }
+.containH1Avatar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   color: var(--textGeneral);
   text-align: center;
-  font-size: 25px;
-  padding: 30px;
+  font-size: 30px;
+  letter-spacing:3px;
+  padding: 100px 0 0;
   font-weight: 600;
+}
+.textH1{
+  padding: 60px 0;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.avatar{
+  height: 250px;
+  background-color:var(--blueDarkGeneral);
+  border-radius: 100%;
 }
 
 .imgGeneral {
@@ -114,8 +135,6 @@ article {
     right: 0;
     background-color: var(--blueDarkGeneral);
     padding: 2rem;
-    bottom: 0;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
 
   .nav.visible {
