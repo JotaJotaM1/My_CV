@@ -12,6 +12,7 @@
   --colorIconMenu: white;
   --hoverNav: aqua;
   --textGeneral: rgb(2, 2, 51);
+  --whiteGeneral: white;
 }
 
 main {
@@ -19,8 +20,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 0 5%;
-  background-color: ;
 }
 
 header {
@@ -58,61 +57,97 @@ header {
   display: none;
 }
 
-.fatherGallery {
-  margin: 0 3%;
-}
-.containH1Avatar{
+.containH1Avatar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   color: var(--textGeneral);
   text-align: center;
-  font-size: 30px;
-  letter-spacing:3px;
+  font-size: 32px;
+  letter-spacing: 3px;
   padding: 100px 0 0;
   font-weight: 600;
 }
-.textH1{
-  padding: 60px 0;
+
+.textH1 {
+  width: 370px;
+  padding: 60px 30px;
   text-align: center;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
 }
 
-.avatar{
+.avatar {
   height: 250px;
-  background-color:var(--blueDarkGeneral);
+  background-color: var(--blueDarkGeneral);
   border-radius: 100%;
+}
+
+.containHeroDevi {
+  margin: 100px 0 0;
+  height: 140px;
+  background-image: url(/img/hero-devices.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.containFatherProfile {
+  background-color: var(--blueDarkGeneral);
+  padding: 30px;
+  text-align: center;
+}
+
+.titletH2 {
+  margin: 30px 0 20px;
+  font-size: 24px;
+  text-align: center;
+  color: var(--colorIconMenu);
+  font-weight: 600;
+}
+
+.textH2 {
+  color: var(--whiteGeneral);
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .imgGeneral {
   width: 230px;
   height: auto;
 }
+
 .cardLengu {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 article {
   padding: 30px;
   border-radius: 2rem;
   text-align: center;
   box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
 }
+
 .textCard {
   color: var(--textGeneral);
   font-weight: 300;
   text-align: center;
 }
+
 .textJS {
   padding-top: 20px;
 }
+
 @media screen and (max-width: 780px) {
+
   .openMenu,
   .closeMenu {
     display: block;
@@ -133,6 +168,7 @@ article {
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
     background-color: var(--blueDarkGeneral);
     padding: 2rem;
   }
@@ -150,8 +186,17 @@ article {
   }
 }
 
-@media screen and (min-width: 903px) {
-    .cardLengu {
-      flex-direction: row; /* Cambia a row en pantallas mayores a 768px */
-    }
+@media screen and (min-width: 768px) {
+  .cardLengu {
+    flex-direction: row;
+    /* Cambia a row en pantallas mayores a 768px */
+  }
+
+  .textH1 {
+    padding: 60px 10px;
+  }
+
+  .containHeroDevi {
+    height: 296px;
+  }
 }
