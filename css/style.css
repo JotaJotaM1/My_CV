@@ -107,7 +107,7 @@ h1 {
 .containHeroDevi {
   margin: 100px 0 0;
   height: 150px;
-  background-image: url(/img/hero-devices.svg);
+  background-image: url(../img/hero-devices.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
