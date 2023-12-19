@@ -156,7 +156,7 @@ h1 {
 
 .bi {
   color: var(--hoverAndText);
-  font-size: 60px;
+  font-size: 35px;
   margin-top: 40px;
 }
 
@@ -175,7 +175,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .logo {
@@ -281,7 +280,7 @@ h1 {
   }
 
   .titleLogo{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .bi{
