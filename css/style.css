@@ -180,6 +180,9 @@ h1 {
 .logo {
   height: 60px;
 }
+.logo_skill{
+  font-size: 70px;
+}
 
 .titleLogo {
   text-align: center;
@@ -283,7 +286,7 @@ h1 {
     font-size: 23px;
   }
 
-  .bi{
+  .logo_skill{
     font-size:84px;
   }
   .logo {
