@@ -142,7 +142,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 
 .titletH2Skill,
@@ -151,7 +151,8 @@ h1 {
   font-size: 27px;
   color: var(--textGeneral);
   font-weight: 600;
-  padding: 24px 0;
+  padding: 24px 40px;
+  text-align: center;
 }
 
 .bi {
@@ -160,7 +161,7 @@ h1 {
   margin-top: 40px;
 }
 
-.textH2Skill {
+.textH2Skill, .textH2LengSpeak {
   text-align: center;
   color: var(--textGeneral);
   line-height: 40px;
@@ -186,10 +187,10 @@ h1 {
 
 .titleLogo {
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   padding-bottom: 10px;
-  color: var(--textGeneral);
+  color: var(--whiteGeneral);
 }
 
 .wrapper {
@@ -202,6 +203,17 @@ h1 {
   justify-content: center;
   align-items: center;
   justify-items: center;
+  background-color: var(--blueDarkGeneral);
+  margin: 50px 10px;
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.containLogoFather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 780px) {
