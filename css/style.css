@@ -22,65 +22,6 @@ main {
   align-items: center;
 }
 
-header {
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--blueDarkGeneral);
-}
-
-.fatherAvatarHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.avatarHeader {
-  height: 60px;
-  border-radius: 100%;
-  background-color: var(--whiteGeneral);
-  border: 2px solid var(--hoverAndText);
-}
-
-.textAvatarHeader {
-  color: var(--whiteGeneral);
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.navList {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.navList li a {
-  text-decoration: none;
-  color: var(--textNav);
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.navList li:hover a {
-  color: var(--hoverAndText);
-}
-
-.openMenu,
-.closeMenu {
-  display: none;
-}
-
-.containH1Avatar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   color: var(--textGeneral);
   text-align: center;
@@ -161,13 +102,14 @@ h1 {
   margin-top: 40px;
 }
 
-.textH2Skill, .textH2LengSpeak {
+.textH2Skill,
+.textH2LengSpeak {
   text-align: center;
   color: var(--textGeneral);
   line-height: 40px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 300;
-  padding: 0 30px;
+  padding: 0 5rem;
 }
 
 .containFatherLogo,
@@ -181,7 +123,8 @@ h1 {
 .logo {
   height: 60px;
 }
-.logo_skill{
+
+.logo_skill {
   font-size: 70px;
 }
 
@@ -209,51 +152,11 @@ h1 {
   border-radius: 1rem;
 }
 
-.containLogoFather{
+.containLogoFather {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 780px) {
-
-  .openMenu,
-  .closeMenu {
-    display: block;
-    border: 0;
-    font-size: 1.5rem;
-    color: var(--colorIconMenu);
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: var(--blueDarkGeneral);
-    padding: 2rem;
-  }
-
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s;
-  }
-
-  .navList {
-    flex-direction: column;
-    align-items: end;
-    gap: 2rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -285,25 +188,33 @@ h1 {
     font-size: 34px;
   }
 
-  .textH2Skill {
-    padding: 0px 13rem;
+  .textH2Skill,
+  .textH2LengSpeak {
+    padding: 0px 10rem;
     font-size: 23px;
   }
 
-  .wrapper{
+  .textH2LengSpeak {
+    padding: 0px 9rem;
+  }
+
+  .wrapper {
     gap: 40px;
+    margin: 50px 30px;
+    padding: 40px;
   }
 
-  .titleLogo{
+  .titleLogo {
     font-size: 23px;
   }
 
-  .logo_skill{
-    font-size:84px;
+  .logo_skill {
+    font-size: 84px;
   }
+
   .logo {
     height: 80px;
-}
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -312,8 +223,28 @@ h1 {
   }
 
   .textH2 {
-    padding: 1px 24%;
+    padding: 0 9%;
     font-size: 27px;
   }
 
+  .titletH2Skill,
+  .titletH2LengSpeak {
+    font-size: 40px;
+    padding: 30px 11rem;
+    font-size: 40px;
+  }
+
+  .textH2Skill,
+  .textH2LengSpeak {
+    padding: 0px 26rem;
+    font-size: 27px;
+  }
+
+  .textH2LengSpeak {
+    padding: 30px 22rem;
+  }
+
+  .wrapper {
+    margin: 50px 17%;
+  }
 }
