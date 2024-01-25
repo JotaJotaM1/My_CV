@@ -1,4 +1,20 @@
-header {
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --textNav: rgb(255, 255, 255);
+  --blueDarkGeneral: rgb(2, 2, 51);
+  --colorIconMenu: white;
+  --hoverAndText: aqua;
+  --textGeneral: rgb(2, 2, 51);
+  --whiteGeneral: white;
+}
+.containFather{
+  font-family: "Roboto", sans-serif;
     width: 100%;
     padding: 2rem;
     display: flex;
