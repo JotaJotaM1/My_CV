@@ -65,6 +65,8 @@
     transition: all 500ms ease;
 }
 .icon-mas2{
+    line-height: 47px;
+    border: 2px solid var(--hoverAndText);
     background-color: var(--blueDarkGeneral);
 }
 .prueba{
