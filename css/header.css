@@ -13,102 +13,106 @@
   --textGeneral: rgb(2, 2, 51);
   --whiteGeneral: white;
 }
-.containFather{
+
+.containFather {
+  position: fixed;
   font-family: "Roboto", sans-serif;
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--blueDarkGeneral);
-  }
-  
-  .fatherAvatarHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .avatarHeader {
-    height: 60px;
-    border-radius: 100%;
-    background-color: var(--whiteGeneral);
-    border: 2px solid var(--hoverAndText);
-  }
-  
-  .textAvatarHeader {
-    color: var(--whiteGeneral);
-    font-size: x-large;
-    font-weight: bold;
-  }
-  
-  .navList {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .navList li a {
-    text-decoration: none;
-    color: var(--textNav);
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .navList li:hover a {
-    color: var(--hoverAndText);
-  }
-  
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blueDarkGeneral);
+}
+
+.fatherAvatarHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatarHeader {
+  height: 60px;
+  border-radius: 100%;
+  background-color: var(--whiteGeneral);
+  border: 2px solid var(--hoverAndText);
+}
+
+.textAvatarHeader {
+  color: var(--whiteGeneral);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: var(--textNav);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navList li:hover a {
+  color: var(--hoverAndText);
+}
+
+.openMenu,
+.closeMenu {
+  display: none;
+}
+
+.containH1Avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+
   .openMenu,
   .closeMenu {
-    display: none;
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    color: var(--colorIconMenu);
+    background-color: transparent;
+    cursor: pointer;
   }
-  
-  .containH1Avatar {
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--blueDarkGeneral);
+    padding: 2rem;
+    justify-content: center;
+    transition: 0.5s;
   }
 
-  @media screen and (max-width: 780px) {
-
-    .openMenu,
-    .closeMenu {
-      display: block;
-      border: 0;
-      font-size: 1.5rem;
-      color: var(--colorIconMenu);
-      background-color: transparent;
-      cursor: pointer;
-    }
-  
-    .nav {
-      opacity: 0;
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      background-color: var(--blueDarkGeneral);
-      padding: 2rem;
-    }
-  
-    .nav.visible {
-      opacity: 1;
-      visibility: visible;
-      transition: 0.5s;
-    }
-  
-    .navList {
-      flex-direction: column;
-      align-items: end;
-      gap: 2rem;
-    }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
   }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
