@@ -1,0 +1,86 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --textNav: rgb(255, 255, 255);
+    --blueDarkGeneral: rgb(2, 2, 51);
+    --colorIconMenu: white;
+    --hoverAndText: aqua;
+    --textGeneral: rgb(2, 2, 51);
+    --whiteGeneral: white;
+}
+
+main {
+    padding-top: 30%;
+}
+
+.sectionCardPro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+
+}
+
+.titleH1Pr {
+    padding: 40px 25px;
+    color: var(--textGeneral);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.textH1Pr {
+    text-align: center;
+    line-height: 30px;
+    font-size: 21px;
+    font-weight: 300;
+    padding: 0 13px;
+}
+
+.containCardPro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 0.8rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.imgPro {
+    height: auto;
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.containImg {
+    padding: 10px;
+    width: 330px;
+    height: auto;
+}
+
+.containInfo {
+    width: 330px;
+    padding: 20px;
+}
+.titleH2Info{
+    font-size: 20px;
+    padding-bottom: 14px;
+    color: var(--textGeneral);
+    font-weight: 600;
+}
+.textH2Info{
+    color: var(--textGeneral);
+    font-weight: 300;
+}
+
