@@ -50,7 +50,6 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .navList li {
@@ -110,12 +109,17 @@
     cursor: pointer;
   }
 
+  .closeMenu{
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .nav {
     opacity: 0;
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
     position: absolute;
     top: 0;
@@ -123,7 +127,6 @@
     left: 0;
     background-color: var(--blueDarkGeneral);
     padding: 2rem;
-    justify-content: center;
     transition: 0.5s;
   }
 
@@ -135,7 +138,10 @@
 
   .navList {
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    align-items: start;
+    row-gap: 2rem;
+  }
+  .underline-text{
+    display: block;
   }
 }
