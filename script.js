@@ -10,7 +10,7 @@ close.addEventListener("click", () => {
   nav.classList.remove("visible");
 });
 
-//
+/* Code to view text with animation considering scroll */
 
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {

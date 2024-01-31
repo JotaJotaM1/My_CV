@@ -53,6 +53,13 @@
   gap: 1rem;
 }
 
+.navList li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
 .navList li a {
   text-decoration: none;
   color: var(--textNav);
@@ -62,6 +69,21 @@
 
 .navList li:hover a {
   color: var(--hoverAndText);
+}
+
+.navList li .underline-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: aqua;
+  transition: width 0.3s ease;
+}
+
+.navList li:hover .underline-text::before {
+  width: 100%;
 }
 
 .openMenu,
