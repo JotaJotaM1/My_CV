@@ -9,7 +9,6 @@
 :root {
     --textNav: rgb(255, 255, 255);
     --blueDarkGeneral: rgb(2, 2, 51);
-    --colorIconMenu: white;
     --hoverAndText: aqua;
     --textGeneral: rgb(2, 2, 51);
     --whiteGeneral: white;
@@ -26,7 +25,6 @@ main {
     align-items: center;
     gap: 40px;
     padding: 40px 0;
-
 }
 
 .titleH1Pr {
@@ -46,6 +44,7 @@ main {
 }
 
 .containCardPro {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +54,12 @@ main {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+.containImg {
+    padding: 10px;
+    width: 330px;
+    height: auto;
+}
+
 .imgPro {
     height: auto;
     width: 100%;
@@ -62,25 +67,36 @@ main {
     border: 1px solid rgb(221, 221, 221);
     cursor: pointer;
 }
-
-.containImg {
-    padding: 10px;
-    width: 330px;
+.rowLink{
     height: auto;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color:orangered;
+    transition: color 0.1s;
+    cursor: pointer;
+
 }
 
-.containInfo {
+.rowLink:hover {
+    color:var(--whiteGeneral); 
+  }
+
+.containInfo {  
     width: 330px;
     padding: 20px;
 }
-.titleH2Info{
+
+.titleH2Info {
     font-size: 20px;
     padding-bottom: 14px;
     color: var(--textGeneral);
     font-weight: 600;
 }
-.textH2Info{
+
+.textH2Info {
     color: var(--textGeneral);
     font-weight: 300;
 }
-

@@ -25,7 +25,7 @@ main {
 .titleh1 {
   color: var(--textGeneral);
   text-align: center;
-  font-size: 45px;
+  font-size: 70px;
   letter-spacing: 3px;
   padding: 40% 0 0;
   font-weight: 600;
@@ -38,6 +38,10 @@ main {
   line-height: 40px;
   font-size: 27px;
   font-weight: 300;
+}
+
+.nameH1 {
+  font-size: 20px;
 }
 
 .avatar {
@@ -88,7 +92,8 @@ main {
 
 .titletH2Skill,
 .titletH2LengSpeak,
-.titleAgi {
+.titleAgi,
+.titleAbout {
   line-height: 40px;
   font-size: 30px;
   color: var(--textGeneral);
@@ -101,7 +106,8 @@ main {
   padding: 50px 20px;
 }
 
-.timeExpe, .jobTitle {
+.timeExpe,
+.jobTitle {
   font-size: 15px;
 }
 
@@ -113,13 +119,20 @@ main {
 
 .textH2Skill,
 .textH2LengSpeak,
-.textAgi {
+.textAgi,
+.textAbout{
   text-align: center;
   color: var(--textGeneral);
   line-height: 40px;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 300;
   padding: 0 1rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.animate {
+  opacity: 1;
 }
 
 .textAgi {
@@ -163,11 +176,28 @@ main {
 }
 
 .containLogoFather,
-.containerCardExpe {
+.containerCardExpe,
+.containLogoDh,
+.sectionAbout {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.containLogoDh {
+  margin: 35px 0;
+  height: 4rem;
+  width: 65%;
+  background-color: black;
+}
+
+.logoDH {
+  height: 1rem;
+}
+
+.spanDh {
+  font-weight: bold;
 }
 
 .sectionExpe {
