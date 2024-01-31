@@ -39,6 +39,13 @@
   background-color: var(--whiteGeneral);
   border: 2px solid var(--hoverAndText);
 }
+
+.textAvatarHeader {
+  color: var(--whiteGeneral);
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .navList {
   list-style-type: none;
   display: flex;
