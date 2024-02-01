@@ -115,6 +115,7 @@
   }
 
   .nav {
+    height: 100vh;
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -125,11 +126,22 @@
     top: 0;
     right: 0;
     left: 0;
-    background: url(../img/prueba.webp) no-repeat bottom 0 right 0 / 200px;
     background-color: var(--blueDarkGeneral);
     padding: 2rem;
     transition: 0.5s;
+    z-index: 1;
   }
+  .nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../img/prueba.webp) no-repeat bottom 0 right 0 / 200px;
+    transform: scaleX(-1);
+    z-index: -1;
+}
 
   .nav.visible {
     opacity: 1;

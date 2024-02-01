@@ -18,7 +18,7 @@
 .iconsBTGlinke,
 .iconsBTGwha,
 .iconsBTG {
-    font-size: 30px;
+    font-size: 34px;
 }
 
 .iconsBTGlinke {
@@ -58,9 +58,9 @@
     text-decoration: none;
     background-color: var(--whiteGeneral);
     color: var(--whiteGeneral);
-    width: 50px;
-    height: 50px;
-    line-height: 52px;
+    width: 60px;
+    height: 60px;
+    line-height: 62px;
     text-align: center;
     border-radius: 100%;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
@@ -68,9 +68,11 @@
 }
 
 .icon-mas2 {
-    line-height: 47px;
+    line-height: 57px;
     border: 2px solid var(--hoverAndText);
     background-color: var(--blueDarkGeneral);
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .redes a:hover {
@@ -90,10 +92,6 @@
     visibility: visible;
 }
 
-.icon-mas2 {
-    cursor: pointer;
-    font-size: 20px;
-}
 
 #btn-mas:checked~.btn-mas .icon-mas2 {
     transform: rotate(90deg);
