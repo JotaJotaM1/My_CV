@@ -44,11 +44,40 @@ main {
   font-size: 20px;
 }
 
-.avatar {
-  height: 250px;
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 20rem;
+  font-size: 18px;
+  color: var(--whiteGeneral);
   background-color: var(--blueDarkGeneral);
-  border-radius: 100%;
-  border: 3px solid aqua;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: var(--whiteGeneral);
+  border: 3px solid var(--blueDarkGeneral);
+  color: var(--blueDarkGeneral);
+}
+
+
+.download-link {
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-left: 8px;
+  font-size: 24px;
+}
+
+.iconDownload {
+  font-size: 25px;
+
 }
 
 .containHeroDevi {
@@ -120,7 +149,7 @@ main {
 .textH2Skill,
 .textH2LengSpeak,
 .textAgi,
-.textAbout{
+.textAbout {
   text-align: center;
   color: var(--textGeneral);
   line-height: 40px;
