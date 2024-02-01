@@ -125,6 +125,7 @@
     top: 0;
     right: 0;
     left: 0;
+    background: url(../img/prueba.webp) no-repeat bottom 0 right 0 / 200px;
     background-color: var(--blueDarkGeneral);
     padding: 2rem;
     transition: 0.5s;

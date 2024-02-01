@@ -31,7 +31,7 @@
 
 .containIconFooter {
     display: flex;
-    width: 100px;
+    width: 40%;
     justify-content: space-between;
 }
 
@@ -44,7 +44,8 @@
 }
 
 .iconGitFooter,
-.iconLinkFooter {
+.iconLinkFooter,
+.iconWhatssapFooterr {
     font-size: 40px;
     color: var(--whiteGeneral);
 }

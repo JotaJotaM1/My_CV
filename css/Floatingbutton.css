@@ -15,23 +15,25 @@
     --whiteGeneral: white;
 }
 
-.iconsBTG, .bi-insta, .iconsBTGlink, .iconsBTGwha{
+.iconsBTGlinke,
+.iconsBTGwha,
+.iconsBTG {
     font-size: 30px;
-    color: var(--blueDarkGeneral);
-}
-.iconsBTGlink{
-    color: #0057B5;
-}
-.iconsBTGwha{
-    color: #4CAF50;
-}
-.iconsBTGwha
-.bi-insta{
-    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50, #0057B5);
-    background-clip: text;
-    color: transparent; 
 }
 
+.iconsBTGlinke {
+    color: #0057b5;
+}
+.iconsBTG{
+    color: black;
+}
+
+.iconsBTGwha {
+    color: var(--whiteGeneral);
+}
+.redes .whatsapp-link {
+    background-color: #4CAF50; 
+}
 #btn-mas {
     display: none;
 }
@@ -64,19 +66,16 @@
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
     transition: all 500ms ease;
 }
-.icon-mas2{
+
+.icon-mas2 {
     line-height: 47px;
     border: 2px solid var(--hoverAndText);
     background-color: var(--blueDarkGeneral);
 }
-.prueba{
-    color: var(black);
-}
 
 .redes a:hover {
-    background-color: var(--textGold);
+    background-color: var(--hoverAndText);
     color: var(--textBlueBold);
-
 }
 
 .redes a {
@@ -91,7 +90,7 @@
     visibility: visible;
 }
 
-.icon-mas2 { 
+.icon-mas2 {
     cursor: pointer;
     font-size: 20px;
 }
@@ -109,17 +108,17 @@
         height: 65px;
         line-height: 65px;
     }
-    .iconsBTG{
-        font-size:30px ;
 
+    .iconsBTG {
+        font-size: 30px;
     }
 
-    .icon-mas2{
+    .icon-mas2 {
         font-size: 20px;
     }
+
     #btn-mas:checked~.btn-mas .icon-mas2 {
         transform: rotate(90deg);
         font-size: 40px;
     }
-
 }
