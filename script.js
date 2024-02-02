@@ -30,7 +30,7 @@ const options = {
 const observer = new IntersectionObserver(handleIntersection, options);
 
 const targets = document.querySelectorAll(
-  ".textH2Skill, .textH2LengSpeak, .textAgi, .textAbout, .titleh1"
+  ".textH2Skill, .textH2LengSpeak, .textAgi, .textAbout, .titleh1, .textH1Pr, .textH1, .textH1Contact"
 );
 
 targets.forEach((target) => {

@@ -41,7 +41,12 @@ main {
     font-size: 21px;
     font-weight: 300;
     padding: 0 13px;
+    opacity: 0;
+    transition: opacity 1s;
 }
+.animate {
+    opacity: 1;
+  }
 
 .containCardPro {
     position: relative;
