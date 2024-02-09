@@ -94,3 +94,20 @@
 .bi-telephone-fill::before {
     font-size: 25px;
 }
+
+@media screen and (min-width: 1024px){
+
+    .sectionFooter{
+        flex-direction: row;
+        padding: 30px 0 ;
+        justify-content: space-around;
+    }
+
+    .containAvatarFooter{
+        padding-top: 0;
+    }
+
+    .containIconFooter{
+        width: 15%;
+    }
+}
