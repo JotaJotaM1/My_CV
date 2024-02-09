@@ -2,107 +2,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --textNav: rgb(255, 255, 255);
-    --blueDarkGeneral: rgb(2, 2, 51);
-    --colorIconMenu: white;
-    --hoverAndText: aqua;
-    --textGeneral: rgb(2, 2, 51);
-    --whiteGeneral: white;
+  --textNav: rgb(255, 255, 255);
+  --blueDarkGeneral: rgb(2, 2, 51);
+  --colorIconMenu: white;
+  --hoverAndText: aqua;
+  --textGeneral: rgb(2, 2, 51);
+  --whiteGeneral: white;
 }
 
 main {
-    padding-top: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding-top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .containGeneralContact {
-    width: 100%;
-    padding: 10px 10px 40px;
+  width: 100%;
+  padding: 10px 10px 40px;
 }
 
 .map-container {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 60%;
-    height: 0;
-    border: 1px solid rgb(219, 219, 219);
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 60%;
+  height: 0;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .titleH1Contact {
-    text-align: center;
-    font-size: 60px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: var(--blueDarkGeneral);
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--blueDarkGeneral);
 }
 
 .textH1Contact {
-    padding: 60px 10px 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 27px;
-    font-weight: 300;
-    opacity: 0;
-    transition: opacity 1s;
+  padding: 60px 10px 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 27px;
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 1s;
 }
 .animate {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--textGeneral);
-    line-height: 40px;
-    font-size: 21px;
-    font-weight: 300;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--textGeneral);
+  line-height: 40px;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .buttonContact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 5px;
-    height: 4.5rem;
-    width: 100%;
-    font-size: 18px;
-    color: var(--whiteGeneral);
-    background-color: var(--blueDarkGeneral);
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px;
+  height: 4.5rem;
+  width: 100%;
+  font-size: 18px;
+  color: var(--whiteGeneral);
+  background-color: var(--blueDarkGeneral);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-decoration: none;
 }
 
 .buttonContact:hover {
-    background-color: var(--whiteGeneral);
-    border: 3px solid var(--blueDarkGeneral);
-    color: var(--blueDarkGeneral);
+  background-color: var(--whiteGeneral);
+  border: 3px solid var(--blueDarkGeneral);
+  color: var(--blueDarkGeneral);
 }
 
-
 .iconContact {
-    font-size: 30px;
+  font-size: 30px;
 }
